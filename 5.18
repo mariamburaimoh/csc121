@@ -1,0 +1,88 @@
+#include <stdio.h>
+#include <math.h>
+
+ //function declaration
+       int isEven(int num1, int num2, int num3, int num4, int num5);
+       
+      int main() {
+      
+      int num1, num2, num3, num4, num5;
+      int result;
+     
+      
+        //ask for num1
+        printf("enter a: ");
+        scanf("%d", &num1);
+
+        //ask for num2
+        printf("enter b: ");
+        scanf("%d", &num2);
+       
+        //ask for num3
+        printf("enter c: ");
+        scanf("%d", &num3);
+
+        //ask for num4
+        printf("enter d: ");
+        scanf("%d", &num4);
+        
+        //ask for num5
+        printf("enter e: ");
+        scanf("%d", &num5);
+        
+    //calling function
+    result = isEven(num1, num2, num3, num4, num5);
+    
+    printf("result is: %d\n", result);
+    
+    return 0;
+    
+    }
+    
+   //function to determine if numbers are even or odd
+      int isEven(int num1, int num2, int num3, int num4, int num5){
+          
+          //declaration
+          
+         int ret1, ret2, ret3, ret4, ret5;
+         int ret[5] = {ret1, ret2, ret3, ret4, ret5};
+          
+          if((num1 % 2) == 0)
+          ret1 = 1;
+          else{
+          ret1 = 0;
+          printf("%d", ret1);
+          }
+          
+          
+          if((num2 % 2) == 0)
+          ret2 = 1;
+          else{
+          ret2 = 0;
+          printf("%d", ret2);
+          }
+         
+          if((num3 % 2) == 0)
+          ret3 = 1;
+          else{
+          ret3 = 0;
+          printf("%d", ret3);
+          }
+          
+          if((num4 % 2) == 0)
+          ret4 = 1;
+          else{
+          ret4 = 0;
+          printf("%d", ret4);
+      }
+          
+          
+          if((num5 % 2) == 0)
+          ret5 = 1;
+          else{
+          ret5 = 0;
+          printf("%d", ret5);
+      }
+        return ret1, ret2, ret3, ret4, ret5;
+    
+    }
