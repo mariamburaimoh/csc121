@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <math.h>
+
+ //function declaration
+       int isEven(int num1);
+       
+      int main() {
+      
+      int num1;
+      int result;
+      
+        //ask for num1
+        printf("enter a: ");
+        scanf("%d", &num1);
+
+        //calling function
+    result = isEven(num1);
+    
+    printf("result is: %d\n", result);
+    
+    return 0;
+    
+    }
+    
+   //function to determine if numbers are even or odd
+      int isEven(int num1){
+          
+          //declaration
+          
+         int ret1;
+         
+          if((num1 % 2) == 0)
+          ret1 = 1;
+          else
+          ret1 = 0;
+          
+        return ret1;
+    
+    }
